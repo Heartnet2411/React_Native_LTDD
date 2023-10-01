@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Button, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, Pressable,TouchableOpacity } from 'react-native';
 import * as React from 'react';
 
 
@@ -17,9 +17,11 @@ const FirstScreen = props => {
                 <Text style={styles.title}>YOUR BUSINESS</Text>
                 <Text style={styles.text}>We will help you to grow your business using online server</Text>
                 <View style={styles.buttonView}>
-                    <Pressable style={styles.button}>
-                        <Text style={styles.buttonText}>Login</Text>
-                    </Pressable>
+                    <TouchableOpacity onPress={() => {navigate('SecondScreen')}}>
+                        <View style={styles.button}>
+                            <Text style={styles.buttonText}>Login</Text>
+                        </View>
+                    </TouchableOpacity>
                     <Pressable style={styles.button} onPress={() => alert("Hello")}>
                         <Text style={styles.buttonText}>Sign up</Text>
                     </Pressable>
@@ -37,7 +39,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        fontFamily: 'Arial',
     },
     wrap: {
         flex: 1,
