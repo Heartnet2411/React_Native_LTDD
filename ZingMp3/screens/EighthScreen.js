@@ -20,7 +20,7 @@ const EighthScreen = props => {
                     <TextInput style={styles.input} placeholder="Please input password" />
                 </View>
 
-                <TouchableOpacity onPress={() => {navigate('EighthScreen')}}>
+                <TouchableOpacity onPress={() => {navigate('FirstScreen')}}>
                     <View style={styles.loginButton}>
                         <Text style={styles.buttonText}>Login</Text>
                     </View>
