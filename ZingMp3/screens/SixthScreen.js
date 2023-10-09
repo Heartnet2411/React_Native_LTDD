@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, Pressable,TouchableOpacity,TextInput } from 'react-native';
 import * as React from 'react';
 
@@ -7,7 +6,6 @@ const SixthScreen = props => {
     const {navigation, route} = props;
     const {navigate, goBack} = navigation;
     return (
-        <View style={styles.wrap}>
             <View style={styles.container}>
                 <Text style={[styles.header]} >Login</Text>
                 <TextInput style={styles.input} placeholder="Name" />
@@ -26,7 +24,6 @@ const SixthScreen = props => {
                 </TouchableOpacity>
                 <Text style={styles.text}>When you agree to terms and conditions</Text>
             </View>
-        </View>
     );
 }
 
@@ -42,9 +39,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    wrap: {
-        flex: 1,
     },
     header: {
         fontSize: 50,

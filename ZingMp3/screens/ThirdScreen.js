@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, Pressable,TouchableOpacity,TextInput } from 'react-native';
 import * as React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -12,9 +11,7 @@ const ThirdScreen = props => {
         // Background Linear Gradient
         colors={["#fff", "#25d2f8"]}
         style={styles.background}
-        >
-        <View style={styles.wrap}>
-            
+        >     
             <View style={styles.container}>
                 <Image
                 source={require('../assets/password.png')}
@@ -33,7 +30,6 @@ const ThirdScreen = props => {
                     </View>
                 </TouchableOpacity>
             </View>
-        </View>
         </LinearGradient>
     );
 }
@@ -50,9 +46,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    wrap: {
-        flex: 1,
     },
     title: {
         fontSize: 35,

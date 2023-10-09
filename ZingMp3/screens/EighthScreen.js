@@ -1,14 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, Pressable,TouchableOpacity,TextInput } from 'react-native';
 import * as React from 'react';
-import { LinearGradient } from 'expo-linear-gradient';
 
 const EighthScreen = props => {    
 
     const {navigation, route} = props;
     const {navigate, goBack} = navigation;
     return (
-        <View style={styles.wrap}>  
             <View style={styles.container}>
                 <Image source={require('../assets/Logo.png')} style={styles.icon}/>
                 <View style={styles.inputView}>
@@ -49,7 +46,6 @@ const EighthScreen = props => {
                     </Pressable>
                 </View>
             </View>
-        </View>
     );
 }
 

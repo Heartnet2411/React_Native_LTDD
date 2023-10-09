@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, Pressable,TouchableOpacity,TextInput } from 'react-native';
 import * as React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -13,7 +12,6 @@ const SeventhScreen = props => {
         colors={["#e3c000", "#fbcb00"]}
         style={styles.background}
         >
-            <View style={styles.wrap}>
                 <View style={styles.container}>
                     <Text style={[styles.header]} >Login</Text>
                     <View style={styles.name}>
@@ -33,7 +31,6 @@ const SeventhScreen = props => {
                     <Text style={styles.text}>CREATE ACCOUNT</Text>
                     
                 </View>
-            </View>
         </LinearGradient>
     );
 }
@@ -50,9 +47,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    wrap: {
-        flex: 1,
     },
     header: {
         fontSize: 50,

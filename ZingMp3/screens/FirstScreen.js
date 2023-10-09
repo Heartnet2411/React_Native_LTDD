@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, Pressable,TouchableOpacity } from 'react-native';
 import * as React from 'react';
 
@@ -7,7 +6,6 @@ const FirstScreen = props => {
     const {navigation, route} = props;
     const {navigate, goBack} = navigation;
     return (
-        <View style={styles.wrap}>
             <View style={styles.container}>
                 <Image 
                 source={require('../assets/Logo.png')}
@@ -26,8 +24,7 @@ const FirstScreen = props => {
                         <Text style={styles.buttonText}>Sign up</Text>
                     </Pressable>
                 </View>
-        </View>
-        </View>
+            </View>
     );
 };
 
@@ -39,9 +36,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    wrap: {
-        flex: 1,
     },
     title: {
         fontSize: 35,
