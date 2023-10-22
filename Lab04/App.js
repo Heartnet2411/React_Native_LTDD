@@ -47,7 +47,6 @@ export default function App() {
               </View>
             ),
             headerStyle: {backgroundColor: '#1ba9ff'},
-            headerLargeTitleShadowVisible: false,
           }}/>
       </Stack.Navigator>
     </NavigationContainer>
