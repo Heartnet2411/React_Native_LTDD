@@ -68,11 +68,6 @@ const DATA = [
 function ListItem1 ({route, navigation }) {
   return (
     <View  style={styles.container}>
-      <View style={styles.header}>
-        <Image style={styles.icon} source={require('../assets/back.png')} />
-        <Text style={styles.headerText}>Chat</Text>
-        <Image style={styles.icon} source={require('../assets/shopping-cart.png')} />
-      </View>
 
       <View style={styles.chat}>
         <Text style={styles.chatText}>Bạn có thắc mắc với sản phẩm vừa xem. Đừng ngại chat với shop</Text>
@@ -117,36 +112,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     position: 'relative'
   },
-  header: {
-    position:'absolute',
-    top: 0,
-    width: '100%',
-    height: 50,
-    backgroundColor: '#1ba9ff',
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  icon: {
-    width: 30,
-    height: 30,
-    marginLeft: 20,
-    marginRight: 20,
-    margin: 10
-  },
-  headerText: {
-    color: '#fff',
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 10,
-    flex: 1,
-    textAlign: 'center'
-  },
 
   chat: {
     width: '100%',
     height: 'auto',
     backgroundColor: '#ccc',
-    marginTop: 50,
+    marginTop: 0,
   },
   chatText: {
     color: '#000',
